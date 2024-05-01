@@ -5,34 +5,40 @@
         <link rel="stylesheet" href="travel_recommendation.css">
     </head>
 
-    <body>
+    <body id="home">
         <nav>
-            <div class="navLinks"></div>
-            <ul>
+            <span class="brand">PVT Travel</span>
+            <div class="nav-links">
+                <ul>
                 <li>Home</li>
                 <li>About Us</li>
                 <li>Contact Us</li>
             </ul>
+            </div>
             <div class="search">
-                <input type="search" id="travelSearch" placeholder="Enter a destination or keyword">
-                <button id="btnSearch">Search</button>
-                <button id="clearSearch">Clear</button>
+                <input type="search" class="input" id="travelSearch" placeholder="Enter a destination or keyword">
+                <button class="button" id="btnSearch">Search</button>
+                <button class="button" id="clearSearch">Clear</button>
             </div>
         </nav>
 
         <div class="container">
-            <h1>Focus on the experience</h1>
-            <p>We help you plan memories. Not travel plans.</p>
-            <button id="bookNow">Book now</button>
-        </div>
+            <div class="introduction">
+                <h1>Focus on the experience</h1>
+                <p>We help you plan memories. Not travel plans.</p>
+                <button class="button primary" id="bookNow">Book now</button>
+            </div>
+            
+            <div class="social-links">
+                <ul>
+                    <li><a id="instagram" href="#"></a></li>
+                    <li><a id="threads" href="#"></a></li>
+                    <li><a id="facebook" href="#"></a></li>
+                    <li><a id="youtube" href="#"></a></li>
+                </ul>
+            </div>
 
-        <div class="social">
-            <ul>
-                <li>Instagram</li>
-                <li>Threads</li>
-                <li>Facebook</li>
-                <li>YouTube</li>
-            </ul>
+            <p class="photo-attribution">Tokyo, Japan &ndash; Photo by <a href="https://unsplash.com/photos/men-in-black-suits-standing-in-the-hallway-tKCd-IWc4gI">Yoav Aziz</a></p>
         </div>
 
         <script src="travel_recommendation.js"></script>
