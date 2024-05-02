@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PVT Travel</title>
+        <link rel="stylesheet" href="travel_recommendation.css">
+    </head>
+
+    <body class="cover" id="contactUs">
+        <nav>
+            <span class="brand">PVT Travel</span>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="travel_recommendation.html">Home</a></li>
+                    <li><a href="about_us.html">About Us</a></li>
+                    <li><a href="contact_us.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="introduction">
+                <h1>Contact us</h1>
+                <p>We can see that you want to learn more.</p>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <form id="contactForm">
+                        <div>
+                            <label for="name">Name</label>
+                            <input class="input" type="text" id="name" name="name" required>
+                        </div>
+
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div>
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+
+                        <button class="button primary" type="submit" onclick="thankyou()">Submit</button>
+                    </form>
+                </div>
+
+                <div class="col">
+                    &nbsp;
+                </div>
+            </div>
+            
+            <div class="social-links">
+                <ul>
+                    <li><a id="instagram" href="#"></a></li>
+                    <li><a id="pinterest" href="#"></a></li>
+                    <li><a id="facebook" href="#"></a></li>
+                    <li><a id="youtube" href="#"></a></li>
+                </ul>
+            </div>
+
+            <p class="photo-attribution">Melbourne, Australia &ndash; Photo by <a href="https://unsplash.com/@i_am_simoesse?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Simona Sergi</a></p>
+        </div>
+
+        <script src="travel_recommendation.js"></script>
+    </body>
+</html>

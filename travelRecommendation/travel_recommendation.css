@@ -6,28 +6,120 @@ body {
     font-size: 16px;
 }
 
-#home {
-    background-image: url(img/yoav-aziz-tokyo-unsplash.jpg);
+.button {
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 1rem;
+    background-color: white;
+    border-radius: .25rem;
+    border: 2px solid white;
+    transition: all .125s ease-out;
+}
+
+.button:hover {
+    border-color: rgb(114, 114, 240);
+}
+
+a,
+a:link
+a:visited {
+    color: rgb(74, 100, 231);
+    transition: all .125s ease-out;
+}
+
+a:hover {
+    color: rgb(44, 62, 150);
+}
+
+input {
+    font-size: 1rem;
+    padding: 1rem;
+    border-radius: .25rem;
+    border: 2px solid #b0b0b0;
+}
+
+label {
+    display: block;
+    margin-top: 1rem;
+}
+
+.cover {
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
 }
 
+#aboutUs{
+    background-image: url(img/jezael-melgoza-minato-ku-unsplash.jpg);
+}
+
+#contactUs{
+    background-image: url(img/simona-sergi-melbourne-unsplash.jpg);
+}
+
+#home {
+    background-image: url(img/yoav-aziz-tokyo-unsplash.jpg);
+}
+
 nav {
     flex: 1 200px;
     display: flex;
-    background-color: rgba(255, 255, 255, .65)
+    background-color: rgba(255, 255, 255, 0.73);
+    padding: .5rem;
+    display: flex;
+    inline-size: auto;
+    align-items: center;
+}
+
+nav span {
+    font-weight: bold;
+    font-size: 1.25rem;
+    margin: 0 1.25rem;
+    color: rgb(32, 32, 32);
 }
 
 .nav-links {
     flex: 2;
-    background-color: blue;
 }
 
-.search {
-    flex: 2;
-    align-items: end;
-    background-color: red;
+.social-links a {
+    width: 24px;
+    height: 24px;
+}
+
+#pinterest {
+    background-image: url(img/pinterest_icon.png);
+}
+
+#instagram {
+    background-image: url(img/instagram_icon.png);
+}
+
+#facebook {
+    background-image: url(img/facebook_icon.png);
+}
+
+#youtube {
+    background-image: url(img/youtube_icon.png);
+}
+
+
+
+.nav-links ul,
+.social-links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-right: 1rem;
+    padding: 1.125rem 0;
+}
+
+.search input {
+    width: 270px;
 }
 
 .container {
@@ -52,24 +144,15 @@ nav {
     padding-top: 8px;
     border-top: 4px solid white;
     font-size: 1.5rem;
+    max-width: 50%;
 }
 
-.social-links li {
-
-    width: 24px;
-    height: 24px;
+.row {
+    display: flex;
+    flex-direction: row;
+    column-gap: 2rem;
 }
 
-.button {
-    font-size: 1rem;
-    font-weight: bold;
-    padding: 1rem;
-    background-color: white;
-    border-radius: .25rem;
-    border: 2px solid white;
-    transition: all .125s ease-out;
-}
-
-.button:hover {
-    border-color: blue;
+.col {
+    flex: 2;
 }
