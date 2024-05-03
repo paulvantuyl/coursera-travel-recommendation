@@ -82,9 +82,20 @@ nav span {
     flex: 2;
 }
 
+.social-links {
+    margin: 4rem 0 1rem 0;
+}
+
+.social-links li {
+    display: inline-block;
+}
+
 .social-links a {
     width: 24px;
     height: 24px;
+    display: block;
+    background-size: contain;
+    filter: invert(1);
 }
 
 #pinterest {
@@ -102,8 +113,6 @@ nav span {
 #youtube {
     background-image: url(img/youtube_icon.png);
 }
-
-
 
 .nav-links ul,
 .social-links ul {
@@ -130,10 +139,6 @@ nav span {
     padding: 24px;
 }
 
-.introduction {
-    flex: 1;
-}
-
 .introduction > h1 {
     font-weight: bold;
     font-size: 6rem;
@@ -144,7 +149,6 @@ nav span {
     padding-top: 8px;
     border-top: 4px solid white;
     font-size: 1.5rem;
-    max-width: 50%;
 }
 
 .row {
@@ -155,4 +159,21 @@ nav span {
 
 .col {
     flex: 2;
+}
+
+.fluid input,
+.fluid textarea {
+    margin-bottom: 1rem;
+    min-width: 100%;
+}
+
+#searchResults {
+    padding: 1rem;
+    background-color: white;
+    color: black;
+    visibility: hidden;
+}
+
+.visible {
+    visibility: visible !important;
 }
