@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PVT Travel</title>
+        <link rel="stylesheet" href="travel_recommendation.css">
+    </head>
+
+    <body class="cover" id="home">
+        <nav>
+            <span class="brand">PVT Travel</span>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="travel_recommendation.html">Home</a></li>
+                    <li><a href="about_us.html">About Us</a></li>
+                    <li><a href="contact_us.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <input type="search" class="input" id="travelSearch" placeholder="Enter a destination or keyword">
+                <button class="button" id="btnSearch">Search</button>
+                <button class="button" id="clearSearch">Clear</button>
+            </div>
+        </nav>
+
+        <div class="row container">
+            <div class="col">
+                <div class="introduction">
+                    <h1>Find an experience</h1>
+                    <p>We help you plan memories, not travel plans. Explore the unknown and learn new cultures.</p>
+                    <button class="button primary" id="bookNow">Book now</button>
+                </div>
+            
+                <div class="social-links">
+                    <ul>
+                        <li><a id="instagram" href="#"></a></li>
+                        <li><a id="pinterest" href="#"></a></li>
+                        <li><a id="facebook" href="#"></a></li>
+                        <li><a id="youtube" href="#"></a></li>
+                    </ul>
+                </div>
+
+                <p class="photo-attribution">Tokyo, Japan &ndash; Photo by <a href="https://unsplash.com/photos/men-in-black-suits-standing-in-the-hallway-tKCd-IWc4gI">Yoav Aziz</a></p>
+            </div>
+            
+            <div class="col">
+                <div id="searchResults"><!-- Search results display here --></div>
+            </div>
+        </div>
+
+        <script src="travel_recommendation.js"></script>
+    </body>
+</html>

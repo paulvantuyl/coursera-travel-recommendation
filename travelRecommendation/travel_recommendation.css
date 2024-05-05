@@ -1,0 +1,183 @@
+body {
+    margin: 0;
+    height: 100%;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.button {
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 1rem;
+    background-color: white;
+    border-radius: .25rem;
+    border: 2px solid white;
+    transition: all .125s ease-out;
+}
+
+.button:hover {
+    border-color: rgb(114, 114, 240);
+}
+
+a,
+a:link
+a:visited {
+    color: rgb(74, 100, 231);
+    transition: all .125s ease-out;
+}
+
+a:hover {
+    color: rgb(44, 62, 150);
+}
+
+input {
+    font-size: 1rem;
+    padding: 1rem;
+    border-radius: .25rem;
+    border: 2px solid #b0b0b0;
+}
+
+label {
+    display: block;
+    margin-top: 1rem;
+}
+
+.cover {
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+#aboutUs{
+    background-image: url(img/jezael-melgoza-minato-ku-unsplash.jpg);
+}
+
+#contactUs{
+    background-image: url(img/simona-sergi-melbourne-unsplash.jpg);
+}
+
+#home {
+    background-image: url(img/yoav-aziz-tokyo-unsplash.jpg);
+}
+
+nav {
+    flex: 1 200px;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.73);
+    padding: .5rem;
+    display: flex;
+    inline-size: auto;
+    align-items: center;
+}
+
+nav span {
+    font-weight: bold;
+    font-size: 1.25rem;
+    margin: 0 1.25rem;
+    color: rgb(32, 32, 32);
+}
+
+.nav-links {
+    flex: 2;
+}
+
+.social-links {
+    margin: 4rem 0 1rem 0;
+}
+
+.social-links li {
+    display: inline-block;
+}
+
+.social-links a {
+    width: 24px;
+    height: 24px;
+    display: block;
+    background-size: contain;
+    filter: invert(1);
+}
+
+#pinterest {
+    background-image: url(img/pinterest_icon.png);
+}
+
+#instagram {
+    background-image: url(img/instagram_icon.png);
+}
+
+#facebook {
+    background-image: url(img/facebook_icon.png);
+}
+
+#youtube {
+    background-image: url(img/youtube_icon.png);
+}
+
+.nav-links ul,
+.social-links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-right: 1rem;
+    padding: 1.125rem 0;
+}
+
+.search input {
+    width: 270px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    color: white;
+    padding: 24px;
+}
+
+.introduction > h1 {
+    font-weight: bold;
+    font-size: 6rem;
+    line-height: 6rem;
+}
+
+.introduction > p {
+    padding-top: 8px;
+    border-top: 4px solid white;
+    font-size: 1.5rem;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    column-gap: 2rem;
+}
+
+.col {
+    flex: 2;
+}
+
+.fluid input,
+.fluid textarea {
+    margin-bottom: 1rem;
+    min-width: 100%;
+}
+
+#searchResults {
+    padding: 1rem;
+    background-color: white;
+    color: black;
+    visibility: hidden;
+}
+
+#searchResults img {
+    width: 400px;
+}
+
+.visible {
+    visibility: visible !important;
+}
